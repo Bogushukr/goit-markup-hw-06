@@ -319,13 +319,42 @@
                             <use href="./images/sprite.svg#icon-linc"></use>
                         </svg>
                 </a></li>
-                </ul>
-            </div>
+            </ul>
+        </div>
+        <div class="social-cellar-icon">
+            <b class="footer-social">Подпишитесь на рассылку</b>
+                <form action="">
+                    <label for="email">Почта</label>
+                    <input type="email" name="email" id="email">
+                    <button type="submit">Отправить</button>
+
+                </form>
+            </ul>
+        </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <img src="./images/prikol.jpg" alt="joke">
+            <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+            <Form>
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name">
+
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel">
+
+                <label for="email">Почта</label>
+                <input type="email" name="email" id="email">
+                
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+                <p>Соглашаюсь с рассылкой и принимаю <a href="./" target="blank"
+                        rel="noreferrer noopener">Условия договора</a></p>
+
+                <button type="submit">Отправить</button>
+            </Form>
+
             <button class="btn-backdrop" data-modal-close>
                 <svg class="backdrop-close-svg">
                     <use href="./images/sprite.svg#icon-close"></use>
