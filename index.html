@@ -341,7 +341,7 @@
             <Form>
                 <div class="form-modal">
                 <label for="name">Имя</label>
-                <input type="text" class="form-input" name="name" id="name">
+                <input type="text" class="form-input" name="name" id="name" pattern="^[А-Яа-яЁё\s]+$">
                 <svg class="modal-icon-svg">
                     <use href="./images/sprite.svg#icon-person"></use>
                 </svg>
@@ -349,7 +349,7 @@
                 
                 <div class="form-modal">
                 <label for="tel">Телефон</label>
-                <input type="tel" class="form-input" name="tel" id="tel">
+                <input type="tel" class="form-input" name="tel" id="tel" pattern="[0-9]{10}">
                 <svg class="modal-icon-svg">
                     <use href="./images/sprite.svg#icon-phone"></use>
                 </svg>
