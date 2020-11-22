@@ -478,6 +478,22 @@ textarea {
   position: absolute;
 }
 
+.policy-checkbox:checked + .icon-checked {
+  background-color: var(--link-text-cl);
+  background-image: url(../images/icon-check.svg);
+  border: var(--link-text-cl);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.icon-checked {
+  display: inline-block;
+  border: 1px solid var(--black-text);
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+}
+
 .form-modal-policy label {
   color: var(--main-text-cl);
   font-family: "Roboto";
