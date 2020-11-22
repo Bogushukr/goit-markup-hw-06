@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My second homework</title>
+    <title>goit-markup-hw-06</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
@@ -22,20 +22,20 @@
                     <li class="menu-item"><a href="#contacts" class="link">Контакты</a></li>
                 </ul>
                 <div class="cotacts-nav">
-                    <a class="cotacts-nav-link link" href="mailto:info@devstudio.com">
-                        <svg class="contacts-emil-svg">
-                            <use href="./images/sprite.svg#icon-email"></use>
-                        </svg>info@devstudio.com</a>
-                    <a class="cotacts-nav-link link" href="tel:+380961111111">
-                        <svg class="contacts-phone-svg">
-                            <use href="./images/sprite.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11</a>
+                <a class="cotacts-nav-link link" href="mailto:info@devstudio.com">
+                    <svg class="contacts-emil-svg">
+                        <use href="./images/sprite.svg#icon-email"></use>
+                    </svg>info@devstudio.com</a>
+                <a class="cotacts-nav-link link" href="tel:+380961111111">
+                    <svg class="contacts-phone-svg">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a>
                 </div>
             </nav>
         </div>
     </header>
-    <!--banner-->
 
+    <!--banner-->
     <section class="hero cellar">
         <div class="container-hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
@@ -273,6 +273,7 @@
             </ul>
         </div>
     </section>
+
     <!--cellar-->
     <footer class="cellar">
         <div class="container-footer">
@@ -321,38 +322,62 @@
                 </a></li>
             </ul>
         </div>
-        <div class="social-cellar-icon">
-            <b class="footer-social">Подпишитесь на рассылку</b>
-                <form action="">
-                    <label for="email">Почта</label>
-                    <input type="email" name="email" id="email">
-                    <button type="submit">Отправить</button>
-
+            <div class="social-cellar-form">
+                <form class="cellar-form">
+                    <label class="footer-social" for="email-footer">Подпишитесь на рассылку
+                    </label>
+                    <input type="email" class="input-cellar-form" name="email-footer" id="email-footer" placeholder="E-mail">
+                    <button class="btn-cellar" type="submit">Подписаться
+                        <svg class="cellar-form-svg">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg></button>
                 </form>
-            </ul>
-        </div>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
             <Form>
+                <div class="form-modal">
                 <label for="name">Имя</label>
-                <input type="text" name="name" id="name">
-
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel">
-
-                <label for="email">Почта</label>
-                <input type="email" name="email" id="email">
+                <input type="text" class="form-input" name="name" id="name">
+                <svg class="modal-icon-svg">
+                    <use href="./images/sprite.svg#icon-person"></use>
+                </svg>
+                </div>                
                 
+                <div class="form-modal">
+                <label for="tel">Телефон</label>
+                <input type="tel" class="form-input" name="tel" id="tel">
+                <svg class="modal-icon-svg">
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                </div>
+
+                <div class="form-modal">
+                <label for="email">Почта</label>
+                <input type="email" class="form-input" name="email" id="email">
+                <svg class="modal-icon-svg">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+                </div>
+
+                <div class="form-modal-comment">
                 <label for="comment">Комментарий</label>
-                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                <textarea name="comment" class="form-input" id="comment" cols="30" rows="5" placeholder="Введите текст"></textarea>
+                </div>
 
-                <p>Соглашаюсь с рассылкой и принимаю <a href="./" target="blank"
-                        rel="noreferrer noopener">Условия договора</a></p>
+                <div class="form-modal-policy">
+                <input class="policy-checkbox" type="checkbox" name="policy" id="policy">
+                <label for="policy">Соглашаюсь с рассылкой и принимаю
+                    <a href="https://ain.ua/2016/05/28/48-shutok-i-citat-programmistov-o-programmirovanii/" target="blank" rel="noreferrer noopener">
+                        Условия договора
+                    </a>
+                </label>
+                </div>
 
-                <button type="submit">Отправить</button>
+                <button class="btn-modal" type="submit">Отправить</button>
             </Form>
 
             <button class="btn-backdrop" data-modal-close>
@@ -362,6 +387,7 @@
             </button>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js">
+    </script>
 </body>   
 </html>

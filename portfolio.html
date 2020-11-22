@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My third homework</title>
+    <title>goit-markup-hw-06/2</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
@@ -21,14 +21,14 @@
                     <li class="menu-item"><a href="#contacts" class="link">Контакты</a></li>
                 </ul>
                 <div class="cotacts-nav">
-                    <a class="cotacts-nav-link link" href="mailto:info@devstudio.com">
-                        <svg class="contacts-emil-svg">
-                            <use href="./images/sprite.svg#icon-email"></use>
-                        </svg>info@devstudio.com</a>
-                    <a class="cotacts-nav-link link" href="tel:+380961111111">
-                        <svg class="contacts-phone-svg">
-                            <use href="./images/sprite.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11</a>
+                <a class="cotacts-nav-link link" href="mailto:info@devstudio.com">
+                    <svg class="contacts-emil-svg">
+                        <use href="./images/sprite.svg#icon-email"></use>
+                    </svg>info@devstudio.com</a>
+                <a class="cotacts-nav-link link" href="tel:+380961111111">
+                    <svg class="contacts-phone-svg">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a>
                 </div>
             </nav>
         </div>
@@ -214,16 +214,28 @@
                                 <use href="./images/sprite.svg#icon-face"></use>
                             </svg>
                         </a></li>
-                    <li class="social-icon-item"><a class="social-icon-link" href="https://www.linkedin.com/" target="blank"
-                            rel="noreferrer noopener" aria-label="LinkedIn">
-                            <svg class="social-icon-svg">
-                                <use href="./images/sprite.svg#icon-linc"></use>
-                            </svg>
-                        </a></li>
+                    <li class="social-icon-item">
+                    <a class="social-icon-link" href="https://www.linkedin.com/" target="blank"
+                        rel="noreferrer noopener" aria-label="LinkedIn">
+                        <svg class="social-icon-svg">
+                            <use href="./images/sprite.svg#icon-linc"></use>
+                        </svg>
+                    </a></li>
                 </ul>
             </div>
-        </div>
-    </footer>
+                <div class="social-cellar-form">
+                    <form class="cellar-form">
+                        <label class="footer-social" for="email-footer">Подпишитесь на рассылку
+                        </label>
+                        <input type="email" class="input-cellar-form" name="email-footer" id="email-footer" placeholder="E-mail">
+                        <button class="btn-cellar" type="submit">Подписаться
+                            <svg class="cellar-form-svg">
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg></button>
+                    </form>
+                </div>
+            </div>
+        </footer>
     <script src="./js/modal.js"></script>
     </body>   
     </html>
