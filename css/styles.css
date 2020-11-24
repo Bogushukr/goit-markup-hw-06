@@ -316,6 +316,7 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .btn-position {
@@ -478,6 +479,11 @@ textarea {
   position: absolute;
 }
 
+.label-checked {
+  justify-items: center;
+  align-items: center;
+}
+
 .policy-checkbox:checked + .icon-checked {
   background-color: var(--link-text-cl);
   background-image: url(../images/icon-check.svg);
@@ -492,6 +498,7 @@ textarea {
   width: 15px;
   height: 15px;
   border-radius: 2px;
+  margin-right: 7px;
 }
 
 .form-modal-policy label {
@@ -532,6 +539,7 @@ textarea {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .btn-backdrop {
@@ -545,13 +553,15 @@ textarea {
   background-color: var(--wight-text);
   color: white;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .backdrop-close-svg {
+  position: absolute;
   width: 11px;
   height: 11px;
-  top: 0;
-  left: 0;
+  top: 9px;
+  left: 9px;
   right: 0;
   bottom: 0;
   fill: var(--black-text);
@@ -1202,6 +1212,7 @@ textarea {
   letter-spacing: 0.06em;
 
   position: relative;
+  cursor: pointer;
 }
 
 .btn-cellar:focus,
